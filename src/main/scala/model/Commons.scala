@@ -1,6 +1,7 @@
 package com.phone.company
 package model
 
+
 object Commons {
 
   type PhoneNumber = String
@@ -9,4 +10,5 @@ object Commons {
 
   val FORMAT_STRING_SEPARATOR = " "
 
+  case class MisconfigurationException(message: String) extends Exception
 }
